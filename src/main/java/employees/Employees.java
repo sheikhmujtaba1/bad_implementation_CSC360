@@ -11,7 +11,7 @@ public class Employees
 		Employee x = null;
 		if (i==0)
 			{
-				x = new Salaried_employee(name, hours_worked, pay_rate);
+				x = new someone(name, hours_worked, pay_rate);
 			}
 		else if (i==1)
 			{
