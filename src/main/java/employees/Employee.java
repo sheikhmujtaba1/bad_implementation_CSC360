@@ -6,7 +6,7 @@ public abstract class Employee
 	Float hours_worked;
 	Float pay_rate;
 	
-	Calculate_pay calcpay;
+	does_something calcpay;
 	
 	/**
 	 * @param name
@@ -31,7 +31,7 @@ public abstract class Employee
 	
 	public float pay_behavior()
 	{
-		return calcpay.calc_pay(hours_worked, pay_rate);
+		return calcpay.do_it(hours_worked, pay_rate);
 	}
 	/**
 	 * @return the name

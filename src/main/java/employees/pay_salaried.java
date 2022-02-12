@@ -1,10 +1,10 @@
 package employees;
 
-public class pay_salaried implements Calculate_pay
+public class pay_salaried implements does_something
 {
 
 	@Override
-	public float calc_pay(float h, float pay_rate)
+	public float do_it(float h, float pay_rate)
 	{
 		float total_pay;
 		h = 40;
