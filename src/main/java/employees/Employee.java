@@ -6,13 +6,13 @@ public abstract class Employee
 	Float hours_worked;
 	Float pay_rate;
 	
-	does_something calcpay;
+	does_something calc_using_somethings;
 	
 	/**
 	 * @param name
 	 * @param hours_worked
 	 * @param pay_rate
-	 * @param calcpay
+	 * @param calc_using_somethings
 	 */
 	public Employee(String name, float hours_worked, float pay_rate)
 	{
@@ -20,7 +20,7 @@ public abstract class Employee
 		this.name = name;
 		this.hours_worked = hours_worked;
 		this.pay_rate = pay_rate;
-		this.calcpay = null;
+		this.calc_using_somethings = null;
 	}
 	
 	
@@ -31,7 +31,7 @@ public abstract class Employee
 	
 	public float pay_behavior()
 	{
-		return calcpay.do_it(hours_worked, pay_rate);
+		return calc_using_somethings.do_it(hours_worked, pay_rate);
 	}
 	/**
 	 * @return the name

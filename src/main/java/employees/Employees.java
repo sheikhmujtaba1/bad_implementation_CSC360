@@ -45,7 +45,7 @@ public class Employees
 	{
 		ArrayList<Employee> all_employees = new ArrayList<Employee>();
 		addEmployee("eli", 41f, 7.25f, 2, all_employees);
-		System.out.println(all_employees.get(0));
+		System.out.println(all_employees.get(0).name);
 		pay_all(all_employees);
 		ArrayList<Float> pays = pay_all(all_employees);
 		System.out.println(pays.get(0));

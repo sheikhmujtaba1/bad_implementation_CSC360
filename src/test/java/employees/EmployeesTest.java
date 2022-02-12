@@ -38,5 +38,13 @@ class EmployeesTest
 		rightPays.add(2400.0f);
 		assertEquals(rightPays, pays);
 	}
+	
+	@Test
+	void Testnames()
+	{
+		String name = "eli";
+		assertEquals(all_employees.get(0).name, name);
+		
+	}
 
 }
