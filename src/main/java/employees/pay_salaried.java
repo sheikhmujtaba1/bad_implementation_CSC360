@@ -4,7 +4,7 @@ public class pay_salaried implements does_something
 {
 
 	@Override
-	public float do_it(float h, float pay_rate)
+	public float thing(float h, float pay_rate)
 	{
 		float total_pay;
 		h = 40;
