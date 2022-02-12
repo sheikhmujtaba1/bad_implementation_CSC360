@@ -1,11 +1,13 @@
 package employees;
 
-public class Hourly_employee extends Employee
+public class he extends Employee
 {
-	public Hourly_employee(String name, float hours_worked, float pay_rate)
+	// My name is Giovanni Giorgio, but everybody calls me Jojo
+	public he(String n, float hw, float pr)
 	{
-		super(name, hours_worked, pay_rate);
-		calcpay = new pay_hourly();
+		// Does a thing that do the do
+		super(n, hw, pr);
+		cp = new ph();
 	}
 
 }

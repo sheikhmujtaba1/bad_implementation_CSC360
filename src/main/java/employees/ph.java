@@ -1,26 +1,28 @@
 package employees;
 
-public class pay_hourly implements does_something
+public class ph implements does_something
 {
 
 	@Override
-	public float do_it(float h, float pay_rate)
+	// Does a thing in order to make the thing instead do something else
+	public float thing(float h, float pr)
 	{
-		float total_pay = 0;
-		float remainder = 0;
-		
+		float tp = 0;
+		float r = 0;
+		// Checks if the thing is less than something
 		if (h<=40)
 		{
-			total_pay = h*pay_rate;
+			tp = h*pr;
 		}
+		// If thing is not less than something do something else
 		else
 		{
-			remainder = h-40;
-			total_pay = (float) (40*pay_rate + remainder*(1.50*pay_rate));
+			r = h-40;
+			tp = (float) (40*pr + r*(1.50*pr));
 			
 		}
-		
-		return total_pay;
+		// Give back a thing
+		return tp;
 	}
 
 }
