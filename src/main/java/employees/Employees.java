@@ -15,7 +15,7 @@ public class Employees
 			}
 		else if (i==1)
 			{
-				x = new Hourly_employee(name, hours_worked, pay_rate);
+				x = new he(name, hours_worked, pay_rate);
 			}
 		else if (i==2)
 			{

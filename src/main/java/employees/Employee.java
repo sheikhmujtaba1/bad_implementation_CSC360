@@ -5,15 +5,18 @@ public abstract class Employee
 	String name;
 	Float hours_worked;
 	Float pay_rate;
-	
 	does_something calc_using_somethings;
+
 	
 	/**
 	 * @param name
 	 * @param hours_worked
 	 * @param pay_rate
+/*<<<<<<< HEAD
 	 * @param calc_using_somethings
-	 */
+=======
+	 * @param cp
+>>>>>>> a0eb294e773cdc5d76535783ab8b89a5a5d7415c*/
 	public Employee(String name, float hours_worked, float pay_rate)
 	{
 		super();
@@ -36,17 +39,11 @@ public abstract class Employee
 	/**
 	 * @return the name
 	 */
-	public String getName()
-	{
-		return name;
-	}
+	public String getName(){return name;}
 	/**
 	 * @param name the name to set
 	 */
-	public void setName(String name)
-	{
-		this.name = name;
-	}
+	public void setName(String name){this.name=name;}
 	/**
 	 * @return the hours_worked
 	 */
