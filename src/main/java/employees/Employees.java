@@ -6,9 +6,9 @@ public class Employees
 {
 
 	/* salaried = 0, hourly = 1 and contractor = 2*/
-	public static void addEmployee(String name, float hours_worked, float pay_rate, int i, ArrayList<Employee> all_employees)
+	public static void addEmployee(String name, float hours_worked, float pay_rate, int i, ArrayList<human> all_employees)
 	{
-		Employee x = null;
+		human x = null;
 		if (i==0)
 			{
 				x = new someone(name, hours_worked, pay_rate);
@@ -25,11 +25,11 @@ public class Employees
 		all_employees.add(x);
 	}
 	
-	public static ArrayList<Float> pay_all(ArrayList<Employee> all_employees)
+	public static ArrayList<Float> pay_all(ArrayList<human> all_employees)
 	{
 		int len = all_employees.size();
 		int i;
-		Employee curr_emp;
+		human curr_emp;
 		ArrayList<Float> pay_stub = new ArrayList<Float>();
 		for (i=0; i<len; i++)
 		{
@@ -43,9 +43,9 @@ public class Employees
 	
 	public static void main(String args[])
 	{
-		ArrayList<Employee> all_employees = new ArrayList<Employee>();
+		ArrayList<human> all_employees = new ArrayList<human>();
 		addEmployee("eli", 41f, 7.25f, 2, all_employees);
-		System.out.println(all_employees.get(0).name);
+		System.out.println(all_employees.get(0).s);
 		pay_all(all_employees);
 		ArrayList<Float> pays = pay_all(all_employees);
 		System.out.println(pays.get(0));

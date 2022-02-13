@@ -1,6 +1,6 @@
 package employees;
 
-public class he extends Employee
+public class he extends human
 {
 	/* My name is Giovanni Giorgio, but everybody calls me Jojo*/
 	public he(String n, float hw, float pr)

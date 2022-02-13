@@ -9,14 +9,14 @@ import org.junit.jupiter.api.Test;
 
 class EmployeesTest
 {
-	ArrayList<Employee> all_employees;
+	ArrayList<human> all_employees;
 	ArrayList<Float> pays;
 	
 
 	@BeforeEach
 	void setUp() throws Exception
 	{
-		all_employees = new ArrayList<Employee>();
+		all_employees = new ArrayList<human>();
 		Employees.addEmployee("eli", 41f, 7.25f, 2, all_employees);
 		Employees.addEmployee("hayata", 41f, 7.25f, 1, all_employees);
 		Employees.addEmployee("son", 41f, 7.25f, 0, all_employees);
@@ -43,7 +43,9 @@ class EmployeesTest
 	void Testnames()
 	{
 		String name = "eli";
-		assertEquals(all_employees.get(0).name, name);
+		assertEquals(all_employees.get(0).s, name);
+		assertEquals(all_employees.get(0).hw, 41f);
+		assertEquals(all_employees.get(0).pr, 7.25f);
 		
 	}
 
