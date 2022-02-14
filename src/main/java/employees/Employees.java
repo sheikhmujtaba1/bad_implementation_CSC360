@@ -19,7 +19,7 @@ public class Employees
 			}
 		else if (i==2)
 			{
-				x = new Contractor_employee(name, hours_worked, pay_rate);
+				x = new ceeeeeeeeeeeee(name, hours_worked, pay_rate);
 			}
 		
 		all_employees.add(x);
